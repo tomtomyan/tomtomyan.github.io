@@ -1,5 +1,6 @@
 /*
- * Globals
+ * Inspired by the skeuomorphic design of previous Apple GUIs
+ *                                                     - Tom
  */
 
 /* Links */
@@ -9,14 +10,12 @@ a:hover {
   color: #fff;
 }
 
-/* Custom default button */
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
+/* Set text to white when link is active, hovered, or focused */
+.active > a,
+.active > a:hover,
+.active > a:focus {
+  color: #fff;
+  border-bottom-color: #5F5F5F;
 }
 
 /*
@@ -26,117 +25,103 @@ html,
 body {
   height: 100%;
 }
+
 body {
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
   background: url("images/linen.png");
+}
+
+/*
+ * Cards
+ */
+.card {
+  color: #5F5F5F;
+  margin-top: 2em;
+  background: url("images/linen2.png");
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   display: table;
   width: 100%;
-  height: 100%; /* For at least Firefox */
+  height: 100%;
   min-height: 100%;
   -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
           box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
+
 .site-wrapper-inner {
   display: table-cell;
   vertical-align: top;
 }
+
 .cover-container {
   margin-right: auto;
   margin-left: auto;
 }
+/*U
+iframe {
+  width: 100%;
+}
+*/
+/*
+ * Navigation
+*/
 
-/* Padding for spacing */
-.inner {
-  padding: 30px;
+nav {
+  padding: 1.75em 0;
 }
 
-/*
- * Header
- */
-.masthead-nav > li {
+li {
   display: inline-block;
 }
-.masthead-nav > li + li {
-  margin-left: 20px;
+
+li + li {
+  margin-left: 1.75em;
 }
-.masthead-nav > li > a {
+
+li > a {
   padding-right: 0;
   padding-left: 0;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff; /* IE8 proofing */
+  font-size: 1.25em;
   color: rgba(255,255,255,.75);
-  border-bottom: 2px solid transparent;
-}
-.masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus {
-  background-color: transparent;
-  border-bottom-color: #a9a9a9;
-  border-bottom-color: rgba(255,255,255,.25);
-}
-.masthead-nav > .active > a,
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
-  color: #fff;
-  border-bottom-color: #fff;
 }
 
-@media (min-width: 768px) {
-  .masthead-nav {
-    float: left;
-  }
-}
 
-/*
- * Cover
- */
-.cover {
-  padding: 0 20px;
-}
-
-/*
- * Footer
- */
-.mastfoot {
-  color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
+/* Spacing between footer elements */
+p > a + a {
+  margin-left: 1em;
 }
 
 /*
  * Affix and center
  */
-@media (min-width: 320px) {
-  /* Pull out the header and footer */
-  .masthead {
-    position: fixed;
-    top: 0;
-  }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-  }
+@media (min-width: 40em) {
+
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
   }
   /* Handle the widths */
-  .masthead,
-  .mastfoot,
+  .footer,
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
 }
 
-@media (min-width: 992px) {
-  .masthead,
-  .mastfoot,
+.footer {
+  padding-top: 2em;
+}
+
+@media (min-width: 62em) {
+  .footer,
   .cover-container {
-    width: 700px;
+    width: 60em;
   }
 }
