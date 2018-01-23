@@ -1,7 +1,0 @@
-Due to academic integrity I am not able to share the code freely on the internet.
-However, my teammate has made a Github account that allows you to view/download the code.
-
-The credentials are as follows: 
-
-username: student922
-password: h87jfs1
