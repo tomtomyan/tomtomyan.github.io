@@ -125,3 +125,7 @@ p > a + a {
     width: 60em;
   }
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
