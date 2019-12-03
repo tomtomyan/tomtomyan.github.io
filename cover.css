@@ -1,21 +1,8 @@
-/*
- * Inspired by the skeuomorphic design of previous Apple GUIs
- *                                                     - Tom
- */
-
 /* Links */
 a,
 a:focus,
 a:hover {
   color: #fff;
-}
-
-/* Set text to white when link is active, hovered, or focused */
-.active > a,
-.active > a:hover,
-.active > a:focus {
-  color: #fff;
-  border-bottom-color: #5F5F5F;
 }
 
 /*
@@ -29,21 +16,7 @@ body {
 body {
   color: #fff;
   text-align: center;
-  background: url("images/linen.png");
-}
-
-/*
- * Cards
- */
-.card {
-  color: #5F5F5F;
-  margin-top: 2em;
-  background: url("images/linen2.png");
-}
-
-img {
-  width: 100%;
-  height: auto;
+  background: #000;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -65,34 +38,6 @@ img {
   margin-right: auto;
   margin-left: auto;
 }
-/*U
-iframe {
-  width: 100%;
-}
-*/
-/*
- * Navigation
-*/
-
-nav {
-  padding: 1.75em 0;
-}
-
-li {
-  display: inline-block;
-}
-
-li + li {
-  margin-left: 1.75em;
-}
-
-li > a {
-  padding-right: 0;
-  padding-left: 0;
-  font-size: 1.25em;
-  color: rgba(255,255,255,.75);
-}
-
 
 /* Spacing between footer elements */
 p > a + a {
