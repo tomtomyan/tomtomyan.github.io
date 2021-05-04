@@ -37,6 +37,9 @@ body {
 .cover-container {
   margin-right: auto;
   margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Spacing between footer elements */
@@ -73,4 +76,21 @@ p > a + a {
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+.site-wrapper-inner {
+  vertical-align: middle;
+}
+
+.footer,
+.cover-container {
+  width: 100%; /* Must be percentage or pixels for horizontal alignment */
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
 }
